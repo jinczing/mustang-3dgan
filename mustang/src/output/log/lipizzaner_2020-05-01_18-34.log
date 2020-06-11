@@ -1,0 +1,23 @@
+2020-05-01 18:34:53,053 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2020-05-01 18:34:53,057 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2020-05-01 18:34:53,061 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2020-05-01 18:34:53,065 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2020-05-01 18:34:53,148 INFO - lipizzaner_master - Seed used in master: 1
+2020-05-01 18:34:53,200 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2020-05-01 18:34:53,204 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5000/experiments
+2020-05-01 18:34:53,205 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2020-05-01 18:34:53,208 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5001/experiments
+2020-05-01 18:34:53,209 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2020-05-01 18:34:53,212 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5002/experiments
+2020-05-01 18:34:53,213 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2020-05-01 18:34:53,216 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5003/experiments
+2020-05-01 18:34:56,218 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2020-05-01 18:34:56,222 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2020-05-01 18:34:56,225 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2020-05-01 18:34:56,229 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2020-05-01 18:34:56,231 CRITICAL - helpers.heartbeat - Heartbeat: One or more clients (http://127.0.0.1:5000/status.http://127.0.0.1:5001/status.http://127.0.0.1:5002/status.http://127.0.0.1:5003/status) are not alive anymore; exiting others as well.
+2020-05-01 18:34:56,232 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2020-05-01 18:34:56,235 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2020-05-01 18:34:56,238 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2020-05-01 18:34:56,241 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2020-05-01 18:34:56,243 INFO - lipizzaner_master - Stopping heartbeat...

@@ -1,0 +1,11 @@
+2020-05-28 18:54:52,341 INFO - lipizzaner_master - Seed used in master: 1
+2020-05-28 18:54:52,346 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5000/experiments
+2020-05-28 18:54:52,350 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5001/experiments
+2020-05-28 18:54:52,356 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5002/experiments
+2020-05-28 18:54:52,363 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5003/experiments
+2020-05-28 18:54:52,368 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5004/experiments
+2020-05-28 18:54:52,373 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5005/experiments
+2020-05-28 18:54:52,378 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5006/experiments
+2020-05-28 18:54:52,384 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5007/experiments
+2020-05-28 18:54:52,391 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5008/experiments
+2020-05-28 19:09:10,411 INFO - lipizzaner_master - Stopping heartbeat...

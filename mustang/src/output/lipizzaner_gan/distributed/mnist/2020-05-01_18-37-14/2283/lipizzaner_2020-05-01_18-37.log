@@ -1,0 +1,4 @@
+2020-05-01 18:37:14,590 INFO - distribution.client_api - Distributed training recognized, set log directory to ./output/lipizzaner_gan/distributed/mnist/2020-05-01_18-37-14/2283
+2020-05-01 18:37:14,599 CRITICAL - distribution.client_api - An unhandled error occured while running Lipizzaner: name 'node' is not defined
+2020-05-01 18:37:14,600 INFO - distribution.client_api - Finished experiment, waiting for new requests.
+2020-05-01 18:37:17,618 WARNING - distribution.client_api - Received stop signal from master, but no experiment is running.

@@ -1,0 +1,23 @@
+2020-05-01 17:35:19,764 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 0.0.0.0
+2020-05-01 17:35:19,768 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 0.0.0.0
+2020-05-01 17:35:19,771 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 0.0.0.0
+2020-05-01 17:35:19,774 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 0.0.0.0
+2020-05-01 17:35:19,777 INFO - lipizzaner_master - Seed used in master: 1
+2020-05-01 17:35:19,779 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 0.0.0.0
+2020-05-01 17:35:19,782 INFO - lipizzaner_master - Successfully started experiment on http://0.0.0.0:5000/experiments
+2020-05-01 17:35:19,784 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 0.0.0.0
+2020-05-01 17:35:19,786 INFO - lipizzaner_master - Successfully started experiment on http://0.0.0.0:5001/experiments
+2020-05-01 17:35:19,788 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 0.0.0.0
+2020-05-01 17:35:19,791 INFO - lipizzaner_master - Successfully started experiment on http://0.0.0.0:5002/experiments
+2020-05-01 17:35:19,793 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 0.0.0.0
+2020-05-01 17:35:19,797 INFO - lipizzaner_master - Successfully started experiment on http://0.0.0.0:5003/experiments
+2020-05-01 17:35:22,799 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 0.0.0.0
+2020-05-01 17:35:22,803 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 0.0.0.0
+2020-05-01 17:35:22,806 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 0.0.0.0
+2020-05-01 17:35:22,809 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 0.0.0.0
+2020-05-01 17:35:22,812 CRITICAL - helpers.heartbeat - Heartbeat: One or more clients (http://0.0.0.0:5000/status.http://0.0.0.0:5001/status) are not alive anymore; exiting others as well.
+2020-05-01 17:35:22,813 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 0.0.0.0
+2020-05-01 17:35:22,815 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 0.0.0.0
+2020-05-01 17:35:22,818 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 0.0.0.0
+2020-05-01 17:35:22,821 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 0.0.0.0
+2020-05-01 17:35:22,823 INFO - lipizzaner_master - Stopping heartbeat...

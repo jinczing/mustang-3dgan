@@ -1,0 +1,4 @@
+2020-05-28 18:02:13,611 INFO - distribution.client_api - Distributed training recognized, set log directory to ./output/lipizzaner_gan/distributed/modelnet10/2020-05-28_18-02-13/4979
+2020-05-28 18:02:13,649 CRITICAL - distribution.client_api - An unhandled error occured while running Lipizzaner: inconsistent use of tabs and spaces in indentation (modelnet10_data_loader.py, line 22)
+2020-05-28 18:02:13,653 INFO - distribution.client_api - Finished experiment, waiting for new requests.
+2020-05-28 18:02:16,667 WARNING - distribution.client_api - Received stop signal from master, but no experiment is running.

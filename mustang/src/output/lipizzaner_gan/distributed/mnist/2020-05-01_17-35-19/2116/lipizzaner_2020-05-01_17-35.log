@@ -1,0 +1,8 @@
+2020-05-01 17:35:19,790 INFO - distribution.client_api - Distributed training recognized, set log directory to ./output/lipizzaner_gan/distributed/mnist/2020-05-01_17-35-19/2116
+2020-05-01 17:35:19,802 INFO - requests.packages.urllib3.connectionpool - Starting new HTTPS connection (1): api.ipify.org
+2020-05-01 17:35:20,072 INFO - requests.packages.urllib3.connectionpool - Starting new HTTPS connection (1): api.ipify.org
+2020-05-01 17:35:20,343 INFO - requests.packages.urllib3.connectionpool - Starting new HTTPS connection (1): api.ipify.org
+2020-05-01 17:35:22,819 WARNING - distribution.client_api - Received stop signal from master, experiment will be quit.
+2020-05-01 17:35:49,659 INFO - requests.packages.urllib3.connectionpool - Starting new HTTPS connection (1): api.ipify.org
+2020-05-01 17:36:14,727 CRITICAL - distribution.client_api - An unhandled error occured while running Lipizzaner: This host is not specified as client in the configuration file, or too many clients match the condition.
+2020-05-01 17:36:14,728 INFO - distribution.client_api - Finished experiment, waiting for new requests.

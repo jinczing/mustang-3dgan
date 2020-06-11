@@ -222,4 +222,5 @@ class ClientAPI:
     def listen(self, port):
         ClientEnvironment.port = port
         ConcurrentPopulations.instance().lock()
+        self.app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
         self.app.run(threaded=True, port=port, host="0.0.0.0")

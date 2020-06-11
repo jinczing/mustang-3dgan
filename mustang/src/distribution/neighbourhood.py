@@ -101,6 +101,7 @@ class Neighbourhood:
             raise Exception('Provide either one client node, or a square number of cells (to create a square grid).')
 
         local_port = ClientEnvironment.port
+
         matching_nodes = [node for node in client_nodes if
                           is_local_host(node['address']) and int(node['port']) == local_port]
 

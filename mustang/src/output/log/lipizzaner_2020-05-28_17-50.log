@@ -1,0 +1,12 @@
+2020-05-28 17:50:56,617 INFO - lipizzaner_master - Seed used in master: 1
+2020-05-28 17:50:56,622 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5000/experiments
+2020-05-28 17:50:56,627 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5001/experiments
+2020-05-28 17:50:56,631 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5002/experiments
+2020-05-28 17:50:56,635 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5003/experiments
+2020-05-28 17:50:56,640 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5004/experiments
+2020-05-28 17:50:56,644 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5005/experiments
+2020-05-28 17:50:56,648 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5006/experiments
+2020-05-28 17:50:56,653 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5007/experiments
+2020-05-28 17:50:56,657 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5008/experiments
+2020-05-28 17:50:59,687 CRITICAL - helpers.heartbeat - Heartbeat: One or more clients (http://127.0.0.1:5000/status.http://127.0.0.1:5001/status.http://127.0.0.1:5002/status.http://127.0.0.1:5003/status.http://127.0.0.1:5004/status.http://127.0.0.1:5005/status.http://127.0.0.1:5006/status.http://127.0.0.1:5007/status.http://127.0.0.1:5008/status) are not alive anymore; exiting others as well.
+2020-05-28 17:50:59,717 INFO - lipizzaner_master - Stopping heartbeat...

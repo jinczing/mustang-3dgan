@@ -1,0 +1,4 @@
+2020-05-28 19:47:45,879 INFO - distribution.client_api - Distributed training recognized, set log directory to ./output/lipizzaner_gan/distributed/modelnet10/2020-05-28_19-47-45/3083
+2020-05-28 19:47:46,015 CRITICAL - distribution.client_api - An unhandled error occured while running Lipizzaner: 'NoneType' object has no attribute 'numel'
+2020-05-28 19:47:46,019 INFO - distribution.client_api - Finished experiment, waiting for new requests.
+2020-05-28 19:47:49,021 WARNING - distribution.client_api - Received stop signal from master, but no experiment is running.

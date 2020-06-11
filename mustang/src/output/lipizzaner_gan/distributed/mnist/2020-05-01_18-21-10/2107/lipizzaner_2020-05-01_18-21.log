@@ -1,0 +1,4 @@
+2020-05-01 18:21:10,167 INFO - distribution.client_api - Distributed training recognized, set log directory to ./output/lipizzaner_gan/distributed/mnist/2020-05-01_18-21-10/2107
+2020-05-01 18:21:11,997 CRITICAL - distribution.client_api - An unhandled error occured while running Lipizzaner: [Errno 2] No such file or directory: './output/data/raw/train-images-idx3-ubyte.gz'
+2020-05-01 18:21:12,009 INFO - distribution.client_api - Finished experiment, waiting for new requests.
+2020-05-01 18:21:13,260 WARNING - distribution.client_api - Received stop signal from master, but no experiment is running.

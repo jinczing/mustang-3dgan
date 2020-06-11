@@ -1,0 +1,27 @@
+2020-05-28 19:56:00,493 INFO - lipizzaner_master - Seed used in master: 1
+2020-05-28 19:56:00,499 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5000/experiments
+2020-05-28 19:56:00,504 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5001/experiments
+2020-05-28 19:56:00,512 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5002/experiments
+2020-05-28 19:56:00,532 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5003/experiments
+2020-05-28 19:56:00,560 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5004/experiments
+2020-05-28 19:56:00,584 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5005/experiments
+2020-05-28 19:56:00,604 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5006/experiments
+2020-05-28 19:56:00,632 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5007/experiments
+2020-05-28 19:56:00,660 INFO - lipizzaner_master - Successfully started experiment on http://127.0.0.1:5008/experiments
+2020-05-28 19:56:03,699 CRITICAL - helpers.heartbeat - Heartbeat: One or more clients (http://127.0.0.1:5000/status.http://127.0.0.1:5001/status.http://127.0.0.1:5002/status.http://127.0.0.1:5003/status.http://127.0.0.1:5004/status.http://127.0.0.1:5005/status.http://127.0.0.1:5006/status.http://127.0.0.1:5007/status.http://127.0.0.1:5008/status) are not alive anymore; exiting others as well.
+2020-05-28 19:56:03,727 INFO - lipizzaner_master - Stopping heartbeat...
+2020-05-28 19:56:31,879 INFO - lipizzaner_master - Stopping heartbeat...
+2020-05-28 19:56:31,880 INFO - lipizzaner_master - Stopping clients...
+2020-05-28 19:56:31,910 CRITICAL - root - Unhandled exception
+Traceback (most recent call last):
+  File "main.py", line 178, in <module>
+    LipizzanerMaster().run()
+  File "/home/jamesc890116/mustang/mustang/src/lipizzaner_master.py", line 86, in run
+    self._terminate(stop_clients=False, return_code=-1)
+  File "/home/jamesc890116/mustang/mustang/src/lipizzaner_master.py", line 156, in _terminate
+    input("Mustang has finished. Press [Enter] to exit.")
+  File "/home/jamesc890116/mustang/mustang/src/lipizzaner_master.py", line 89, in _sigint
+    self._terminate()
+  File "/home/jamesc890116/mustang/mustang/src/lipizzaner_master.py", line 156, in _terminate
+    input("Mustang has finished. Press [Enter] to exit.")
+RuntimeError: can't re-enter readline

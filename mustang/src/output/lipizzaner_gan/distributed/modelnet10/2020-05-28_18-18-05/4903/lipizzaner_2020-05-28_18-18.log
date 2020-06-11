@@ -1,0 +1,4 @@
+2020-05-28 18:18:05,444 INFO - distribution.client_api - Distributed training recognized, set log directory to ./output/lipizzaner_gan/distributed/modelnet10/2020-05-28_18-18-05/4903
+2020-05-28 18:18:05,446 CRITICAL - distribution.client_api - An unhandled error occured while running Lipizzaner: invalid syntax (network_factory.py, line 277)
+2020-05-28 18:18:05,447 INFO - distribution.client_api - Finished experiment, waiting for new requests.
+2020-05-28 18:18:08,510 WARNING - distribution.client_api - Received stop signal from master, but no experiment is running.

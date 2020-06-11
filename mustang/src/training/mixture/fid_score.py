@@ -66,6 +66,20 @@ class FIDCalculator(ScoreCalculator):
         if self.cc.settings['dataloader']['dataset_name'] == 'mnist':    # Gray dataset
             model = MNISTCnn()
             model.load_state_dict(torch.load('./networks/mnist_cnn/mnist_cnn.pkl'))
+        elif self.cc.settings['dataloader']['dataset_name'] == 'modelnet10':
+            model = torch.nn.Sequential(
+                torch.nn.Conv3d(1, 16, 6, stride=2),
+                torch.nn.ELU(),
+                torch.nn.Conv3d(16, 64, 5, stride=2),
+                torch.nn.ELU(),
+                torch.nn.Conv3d(64, 64, 5, stride=2),
+                torch.nn.ELU(),
+                torch.nn.Flatten(),
+                torch.nn.Linear(64, 10),
+                torch.nn.Softmax(1)
+            )
+            checkpoint = torch.load('./networks/modelnet10_cnn/29-1.pt')
+            model.load_state_dict(checkpoint['model_state_dict'])
         else:    # Other RGB dataset
             block_idx = InceptionV3.BLOCK_INDEX_BY_DIM[self.dims]
             model = InceptionV3([block_idx])

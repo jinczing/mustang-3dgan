@@ -1,0 +1,4 @@
+2020-05-28 18:51:00,244 INFO - distribution.client_api - Distributed training recognized, set log directory to ./output/lipizzaner_gan/distributed/modelnet10/2020-05-28_18-51-00/6316
+2020-05-28 18:51:00,250 CRITICAL - distribution.client_api - An unhandled error occured while running Lipizzaner: name 'cube_len' is not defined
+2020-05-28 18:51:00,252 INFO - distribution.client_api - Finished experiment, waiting for new requests.
+2020-05-28 18:51:03,317 WARNING - distribution.client_api - Received stop signal from master, but no experiment is running.

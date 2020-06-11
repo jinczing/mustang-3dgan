@@ -1,0 +1,4 @@
+2020-05-28 18:48:36,921 INFO - distribution.client_api - Distributed training recognized, set log directory to ./output/lipizzaner_gan/distributed/modelnet10/2020-05-28_18-48-36/6066
+2020-05-28 18:48:36,921 CRITICAL - distribution.client_api - An unhandled error occured while running Lipizzaner: name 'z_size' is not defined
+2020-05-28 18:48:36,922 INFO - distribution.client_api - Finished experiment, waiting for new requests.
+2020-05-28 18:48:39,978 WARNING - distribution.client_api - Received stop signal from master, but no experiment is running.

@@ -108,7 +108,7 @@ def initialize_settings(args):
         LogHelper.setup(cc.settings['general']['logging']['log_level'], log_dir)
     if cc.is_losswise_enabled:
         losswise.set_api_key(cc.settings['general']['losswise']['api_key'])
-
+        _logger.info('losswise api key: {}, enable: {}'.format(cc.settings['general']['losswise']['api_key'], cc.is_losswise_enabled))
     return cc
 
 

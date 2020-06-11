@@ -1,0 +1,4 @@
+2020-05-28 17:50:56,635 INFO - distribution.client_api - Distributed training recognized, set log directory to ./output/lipizzaner_gan/distributed/modelnet10/2020-05-28_17-50-56/4302
+2020-05-28 17:50:56,635 CRITICAL - distribution.client_api - An unhandled error occured while running Lipizzaner: 'modelnet10'
+2020-05-28 17:50:56,636 INFO - distribution.client_api - Finished experiment, waiting for new requests.
+2020-05-28 17:50:59,699 WARNING - distribution.client_api - Received stop signal from master, but no experiment is running.

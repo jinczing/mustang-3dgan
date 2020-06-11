@@ -1,0 +1,5 @@
+2020-05-01 16:27:22,947 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 0.0.0.0
+2020-05-01 16:27:22,953 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 0.0.0.0
+2020-05-01 16:27:22,959 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 0.0.0.0
+2020-05-01 16:27:22,966 INFO - requests.packages.urllib3.connectionpool - Starting new HTTP connection (1): 0.0.0.0
+2020-05-01 16:27:22,971 CRITICAL - lipizzaner_master - 0 clients found, but Lipizzaner currently only supports square grids.

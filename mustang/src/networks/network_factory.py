@@ -208,3 +208,82 @@ class ConvolutionalNetworkFactory(NetworkFactory):
         if isinstance(m, nn.ConvTranspose2d) or isinstance(m, nn.Conv2d):
             m.weight.data.normal_(0, 0.02)
             m.bias.data.zero_()
+
+
+class VolumetricConvolutionalNetworkFactory(NetworkFactory):
+
+    z_size = 200
+    cube_len = 32
+    pad = (1, 1, 1)
+    bias = True
+    leak_value = 0.2
+
+    @property
+    def gen_input_size(self):
+        return self.z_size
+
+    def create_generator(self, parameters=None, encoded_parameters=None):
+        net = GeneratorNet(
+            self.loss_function,
+            nn.Sequential(
+                nn.ConvTranspose3d(self.z_size, self.cube_len*8, kernel_size=4, stride=2, bias=self.bias, padding=self.pad),
+                nn.BatchNorm3d(self.cube_len*8),
+                nn.ReLU(),
+                nn.ConvTranspose3d(self.cube_len*8, self.cube_len*4, kernel_size=4, stride=2, bias=self.bias, padding=(1, 1, 1)),
+                nn.BatchNorm3d(self.cube_len*4),
+                nn.ReLU(),
+                nn.ConvTranspose3d(self.cube_len*4, self.cube_len*2, kernel_size=4, stride=2, bias=self.bias, padding=(1, 1, 1)),
+                nn.BatchNorm3d(self.cube_len*2),
+                nn.ReLU(),
+                nn.ConvTranspose3d(self.cube_len*2, self.cube_len, kernel_size=4, stride=2, bias=self.bias, padding=(1, 1, 1)),
+                nn.BatchNorm3d(self.cube_len),
+                nn.ReLU(),
+                nn.ConvTranspose3d(self.cube_len, 1, kernel_size=4, stride=2, bias=self.bias, padding=(1, 1, 1)),
+                nn.Sigmoid()
+            ),
+            self.gen_input_size)
+
+        if not (parameters == None):
+            net.parameters = parameters
+        elif not (encoded_parameters == None):
+            net.encoded_parameters = encoded_parameters
+        else:
+            net.net.apply(self._init_weights)
+
+        return net
+
+    def create_discriminator(self, parameters=None, encoded_parameters=None):
+        net = DiscriminatorNet(
+            self.loss_function,
+            Sequential(
+                nn.Conv3d(1, self.cube_len, kernel_size=4, stride=2, bias=self.bias, padding=(1, 1, 1)),
+                nn.BatchNorm3d(self.cube_len),
+                nn.LeakyReLU(self.leak_value),
+                nn.Conv3d(self.cube_len, self.cube_len*2, kernel_size=4, stride=2, bias=self.bias, padding=(1, 1, 1)),
+                nn.BatchNorm3d(self.cube_len*2),
+                nn.LeakyReLU(self.leak_value),
+                nn.Conv3d(self.cube_len*2, self.cube_len*4, kernel_size=4, stride=2, bias=self.bias, padding=(1, 1, 1)),
+                nn.BatchNorm3d(self.cube_len*4),
+                nn.LeakyReLU(self.leak_value),
+                nn.Conv3d(self.cube_len*4, self.cube_len*8, kernel_size=4, stride=2, bias=self.bias, padding=(1, 1, 1)),
+                nn.BatchNorm3d(self.cube_len*8),
+                nn.LeakyReLU(self.leak_value),
+                nn.Conv3d(self.cube_len*8, 1, kernel_size=4, stride=2, bias=self.bias, padding=self.pad),
+                nn.Sigmoid()
+            ),
+            self.gen_input_size)
+
+        if not (parameters == None):
+            net.parameters = parameters
+        elif not (encoded_parameters == None):
+            net.encoded_parameters = encoded_parameters
+        else:
+            net.net.apply(self._init_weights)
+
+        return net
+
+    @staticmethod
+    def _init_weights(m):
+        if isinstance(m, nn.ConvTranspose3d) or isinstance(m, nn.Conv3d):
+            m.weight.data.normal_(0, 0.02)
+            m.bias.data.zero_()
